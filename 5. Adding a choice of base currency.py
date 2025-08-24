@@ -63,7 +63,7 @@ currencies = {
 # Создание графического интерфейса
 window = Tk()
 window.title("Курс обмена валюты")
-window.geometry("360x200")
+window.geometry("360x300")
 
 Label(text="Базовая валюта:").pack(padx=10, pady=5)
 base_combobox = ttk.Combobox(values=list(currencies.keys()))
