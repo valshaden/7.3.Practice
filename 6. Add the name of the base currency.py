@@ -17,16 +17,16 @@ from tkinter import ttk
 from tkinter import messagebox as mb
 import requests
 
-def update_b_label(event):
+def update_base_label(event):
     # Получаем полное название базовой валюты из словаря и обновляем метку
-    code = b_combobox.get()
+    code = base_combobox.get()
     name = currencies[code]
     b_label.config(text=name)
 
-def update_t_label(event):
+def update_target_label(event):
     # Получаем полное название целевой валюты из словаря и обновляем метку
-    code = t_combobox.get()
-    name = cur[code]
+    code = target_combobox.get()
+    name = currencies[code]
     t_label.config(text=name)
 
 def exchange():
